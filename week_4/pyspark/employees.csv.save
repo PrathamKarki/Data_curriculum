@@ -1,0 +1,18 @@
+(venv) pratham@DESKTOP-PI6GIL9:/mnt/h/Metro-stay-Intelligence$ python3 -m scripts.processing.etl
+file is read successfully.
+Unnecessary columns are dropped!
+Weather Transforamtion complete
+Events Transformation complete
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/h/Metro-stay-Intelligence/scripts/processing/etl.py", line 110, in <module>
+    run_etl()
+  File "/mnt/h/Metro-stay-Intelligence/scripts/processing/etl.py", line 91, in run_etl
+    df_events_daily.to_csv(f"{processed_path}/events_daily.csv", index=False)     
+  File "/mnt/h/Metro-stay-Intelligence/venv/lib/python3.12/site-packages/pandas/core/generic.py", line 3988, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/formats/csvs.py", line 251, in save
+    with get_handle(
+         ^
